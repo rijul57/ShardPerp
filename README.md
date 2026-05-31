@@ -4,8 +4,6 @@ A highly parallelized Solana smart contract that calculates dynamic, entropy-bas
 
 This program leverages **Conflict-free Replicated Data Types (CRDTs)** and **Account Sharding** to eliminate write-lock contention. Traders are deterministically routed to separate shard accounts based on their pubkey, allowing massive parallel throughput. The system asynchronously reconciles these isolated states into a global accumulator using custom 18-decimal fixed-point math and Shannon entropy calculations.
 
-Demo Link - https://drive.google.com/file/d/1enrOUtogEDXEFE3uJz2qWgOXr4TTFM24/view?usp=sharing
-
 ## Features
 
 * **Parallelized Execution:** Trader updates hit isolated shard PDAs, avoiding global state write-locks.
